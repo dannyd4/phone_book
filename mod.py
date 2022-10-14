@@ -15,7 +15,7 @@ def get_id():
     '''
     while True:
         try:
-            with open('phone.txt', 'a+', encoding='utf-8') as file:
+            with open('phone.txt', 'r', encoding='utf-8') as file:
                 id = int(file.readlines()[-1].split(' ')[0])
             return id
         except IndexError:
